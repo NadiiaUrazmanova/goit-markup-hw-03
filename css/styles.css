@@ -93,15 +93,14 @@ address {
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
-        gap: 40px;
-}
+        }
 
 .header-address-list {
     display: flex;
     margin-top: 24px;
     margin-bottom: 24px;
     width: 344px;
-    justify-content: space-between;
+    gap: 40px;
 }
 .header-address-item {
     color: #434455;
@@ -131,7 +130,7 @@ address {
         letter-spacing: 0.02em;
         color: #fff;
         text-align: center;
-        width: 496px;
+        max-width: 496px;
         margin-left: auto;
         margin-right: auto;
 }
@@ -144,8 +143,8 @@ address {
     letter-spacing: 0.04em;
     cursor: pointer;
     display: block;
-    width: 169px;
-    height: 56px;;
+    min-width: 169px;
+    height: 56px;
     margin-left: auto;
     margin-right: auto;
     border: none;
