@@ -14,11 +14,10 @@ img {
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 1158px;
+    margin: 0 auto;
     padding-left: 156px;
-    padding-right: 156px;
-    margin-left: 0;
-    margin-right:0;
+    padding: 0 15px;
 
 }
 
@@ -38,13 +37,17 @@ address {
 }
 
 .header {
+   border-bottom: 1px solid #E7E9FC;
+}
+
+.header-container {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #E7E9FC;
 }
 
 .header-nav {
     display: flex;
+    align-items: center;
     margin-top: 24px;
     margin-bottom: 24px;
       
@@ -54,6 +57,7 @@ address {
     display: flex;
     width: 261px;
     justify-content: space-between;
+    gap: 40px;
 }
 
 .header-logo {
@@ -76,6 +80,7 @@ address {
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        padding: 24px 0;
         }
 .header-nav:hover {
     color: #404bbf; 
@@ -88,6 +93,7 @@ address {
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
+        gap: 40px;
 }
 
 .header-address-list {
@@ -167,8 +173,12 @@ address {
 
 .advantages-list {
     display: flex;
-    justify-content: space-between;
+    gap: 24px;
     }
+
+.advantages-item {
+    calc((100% - 72px) / 4);
+}
 
 .item-name {
     font-size: 20px;
@@ -203,7 +213,7 @@ address {
 
 .team-list{
     display: flex;
-    justify-content: space-between;
+    gap: 24px;
     }
 
 .team-item {
@@ -213,6 +223,11 @@ address {
     border-radius: 0 0 4px 4px;
     }
 
+.team-item-caption{
+    padding: 32px 0;
+}
+
+
 .item-name-team {
     font-size: 20px;
     font-weight: 500;
@@ -220,7 +235,6 @@ address {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
-    margin-top: 32px;
     margin-bottom: 8px;
     text-align: center;
     }
@@ -231,8 +245,7 @@ address {
     letter-spacing: 0.02em;
     color: #434455;
     width: 264px;
-    text-align: center;
-    margin-bottom: 32px;
+    text-align: center;    
 }
 
 .section-3-name {
@@ -259,6 +272,7 @@ address {
     justify-content: space-between;
     gap: 24px;
     margin-bottom: 32px;
+    row-gap: 48px;
 }
 
 .portfolio-item {
@@ -269,9 +283,7 @@ address {
     border-right: 1px solid #E7E9FC;
     border-bottom: 1px solid #E7E9FC;
     border-left: 1px solid #E7E9FC;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 16px;
+    padding: 32px 16px;
 }
 
 .item-name-portfolio {
@@ -308,6 +320,8 @@ address {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-logo-studio {
