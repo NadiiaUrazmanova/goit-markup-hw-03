@@ -43,14 +43,12 @@ address {
 .header-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header-nav {
     display: flex;
-    align-items: center;
-    margin-top: 24px;
-    margin-bottom: 24px;
-      
+    align-items: center;         
 }
 
 .header-nav-list {
@@ -81,6 +79,7 @@ address {
         letter-spacing: 0.02em;
         color: #2e2f42;
         padding: 24px 0;
+        display: block;
         }
 .header-nav:hover {
     color: #404bbf; 
@@ -97,9 +96,6 @@ address {
 
 .header-address-list {
     display: flex;
-    margin-top: 24px;
-    margin-bottom: 24px;
-    width: 344px;
     gap: 40px;
 }
 .header-address-item {
@@ -133,6 +129,7 @@ address {
         max-width: 496px;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 48px;
 }
 .solution-button {
     background-color: #4D5AE5;
@@ -176,7 +173,7 @@ address {
     }
 
 .advantages-item {
-    calc((100% - 72px) / 4);
+    width: ((100%-72px)/4);
 }
 
 .item-name {
@@ -270,7 +267,6 @@ address {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 24px;
-    margin-bottom: 32px;
     row-gap: 48px;
 }
 
